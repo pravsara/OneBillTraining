@@ -25,7 +25,7 @@ public class GuessGame {
 				}
 			} while(inp!='0');
 		
-		System.out.println("End");
+		System.out.println("End"); 
 		sc.close();
 	}
 }
