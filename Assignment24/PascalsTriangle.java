@@ -1,5 +1,7 @@
 package com.onebill.corejava.basics.Assignment24;
 
+import java.util.Scanner;
+
 public class PascalsTriangle {
 	   static int factorial(int n) {
 	      int f;
@@ -15,10 +17,11 @@ public class PascalsTriangle {
 	   public static void main(String args[]){
 	      System.out.println();
 	      int n, i, j;
-	      n = 5;
+	      Scanner sc = new Scanner(System.in);
+	      n = sc.nextInt();
 
 	      for(i = 0; i <= n; i++) {
-	         for(j = 0; j <= n-i; j++){
+	         for(j = 0; j < n-i; j++){
 	            System.out.print(" ");
 	         }
 	         for(j = 0; j <= i; j++){
@@ -26,5 +29,6 @@ public class PascalsTriangle {
 	         }
 	         System.out.println();
 	      }
+	      sc.close();
 	   }
 	}
