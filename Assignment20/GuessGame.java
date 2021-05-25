@@ -10,7 +10,7 @@ public class GuessGame {
 				System.out.println("Enter 0 to exit..");
 				inp = sc.next().charAt(0);
 				if(inp>='a'&&inp<='z') {
-					if(inp==guess) {
+					if(inp==guess) { 
 						System.out.println("You have guessed the correct character");
 						break;
 					}
@@ -25,7 +25,7 @@ public class GuessGame {
 				}
 			} while(inp!='0');
 		
-		System.out.println("End");
+		System.out.println("End"); 
 		sc.close();
 	}
 }
